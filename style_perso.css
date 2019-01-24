@@ -1,9 +1,3 @@
-h1 { /* test css*/
-	color: red;
-}
-
-/* Polices personnalisées */
-
 @font-face
 {
     font-family: 'BallparkWeiner';
@@ -26,4 +20,58 @@ h1 { /* test css*/
          url('polices/dayrom.svg#Dayrom') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face
+{
+    font-family: '1942';
+    src: url('polices/1942.eot');
+    src: url('polices/1942.eot?#iefix') format('embedded-opentype'),
+         url('polices/1942.woff') format('woff'),
+         url('polices/1942.ttf') format('truetype'),
+         url('polices/1942.svg#1942') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #181818;
+}
+
+#bloc_page {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+h1 { /* test css*/
+	color: green;
+	font-family: '1942', sans-serif;
+}
+
+section, footer, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+}
+
+#logo_container {
+	/*background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#titre_logo {
+	font-size: 80px;
+}
+
+#img_logo {
+	width: 10%;
+	margin-bottom: -190px;
+	opacity: 0.6;
 }
